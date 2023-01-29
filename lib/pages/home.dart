@@ -13,7 +13,7 @@ class _HomeState extends State<Home> {
     return Scaffold(
       appBar: AppBar(
         elevation: 0.0,
-        backgroundColor: const Color(0xff55879F),
+        backgroundColor: Color.fromRGBO(33, 150, 243, 1),
         title: const Text(
           "Telegram",
           style: TextStyle(
@@ -137,6 +137,12 @@ class _HomeState extends State<Home> {
           // const Divider(height: 0.2,),
         ],
       ),
+      floatingActionButton: FloatingActionButton(
+          child: Icon(
+            Icons.create,
+            color: Colors.white,
+          ),
+          onPressed: null),
     );
   }
 
