@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:telegram_ui/pages/home.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key});
@@ -77,7 +78,10 @@ class _LoginState extends State<Login> {
                       padding: const EdgeInsets.symmetric(horizontal: 35),
                       child: MaterialButton(
                         minWidth: double.infinity,
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(context,
+                              MaterialPageRoute(builder: (context) => Home()));
+                        },
                         child: Text('Login'),
                         color: Colors.lightBlueAccent,
                         textColor: Colors.white,
