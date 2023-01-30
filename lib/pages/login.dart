@@ -14,7 +14,7 @@ class _LoginState extends State<Login> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Login Screen'),
+          title: Text('Telegram'),
         ),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
