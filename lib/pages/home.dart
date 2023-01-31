@@ -103,9 +103,9 @@ class _HomeState extends State<Home> {
               child: tile(
                   msg: "New Broadcast List", im: Icons.speaker_phone_outlined),
             ),
-            const Divider(
-              height: 10,
-            ),
+            // const Divider(
+            //   height: 10,
+            // ),
             TextButton(
               onPressed: () {
                 Navigator.push(
