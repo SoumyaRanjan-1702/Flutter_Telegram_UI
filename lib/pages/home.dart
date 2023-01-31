@@ -80,13 +80,14 @@ class _HomeState extends State<Home> {
                 ),
               ),
             ),
+            
             tile(msg: "New Group", im: Icons.people),
             tile(msg: "New Seceret Chat", im: Icons.lock),
             tile(msg: "New Broadcast List", im: Icons.speaker_phone_outlined),
             const Divider(
               height: 10,
             ),
-            tile(msg: "Contacts", im: Icons.contact_page_sharp),
+            TextButton(onPressed: () {}, child:  tile(msg: "Contacts", im: Icons.contact_page_sharp),),
             tile(msg: "Theming", im: Icons.format_paint),
             tile(msg: "Settings", im: Icons.settings),
             tile(msg: "Telwgram FAQ", im: Icons.question_answer),
