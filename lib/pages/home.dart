@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:telegram_ui/pages/login.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -80,17 +81,59 @@ class _HomeState extends State<Home> {
                 ),
               ),
             ),
-            
-            tile(msg: "New Group", im: Icons.people),
-            tile(msg: "New Seceret Chat", im: Icons.lock),
-            tile(msg: "New Broadcast List", im: Icons.speaker_phone_outlined),
+            TextButton(
+              onPressed: () {
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => Login()));
+              },
+              child: tile(msg: "New Group", im: Icons.people),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => Login()));
+              },
+              child: tile(msg: "New Secret Chat", im: Icons.lock),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => Login()));
+              },
+              child: tile(
+                  msg: "New Broadcast List", im: Icons.speaker_phone_outlined),
+            ),
             const Divider(
               height: 10,
             ),
-            TextButton(onPressed: () {}, child:  tile(msg: "Contacts", im: Icons.contact_page_sharp),),
-            tile(msg: "Theming", im: Icons.format_paint),
-            tile(msg: "Settings", im: Icons.settings),
-            tile(msg: "Telwgram FAQ", im: Icons.question_answer),
+            TextButton(
+              onPressed: () {
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => Login()));
+              },
+              child: tile(msg: "Contacts", im: Icons.contact_page_sharp),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => Login()));
+              },
+              child: tile(msg: "Theming", im: Icons.format_paint),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => Login()));
+              },
+              child: tile(msg: "Settings", im: Icons.settings),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => Login()));
+              },
+              child: tile(msg: "Telegram FAQ", im: Icons.question_answer),
+            ),
           ],
         ),
       ),
