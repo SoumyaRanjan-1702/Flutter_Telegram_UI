@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:telegram_ui/pages/home.dart';
 
 class Login extends StatefulWidget {
@@ -12,6 +13,7 @@ class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
           title: Text('Telegram'),
@@ -37,6 +39,7 @@ class _LoginState extends State<Login> {
                       child: TextFormField(
                         keyboardType: TextInputType.number,
                         inputFormatters: [FilteringTextInputFormatter.digitsOnly],
+                        maxLength: 10,
                         decoration: InputDecoration(
                           labelText: 'Phone',
                           hintText: 'Enter Phone Number',
