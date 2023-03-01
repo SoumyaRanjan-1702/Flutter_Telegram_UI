@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:telegram_ui/pages/home.dart';
 import 'package:telegram_ui/pages/login.dart';
+// import 'package:telegram_ui/pages/chatpage.dart';
+// import 'package:telegram_ui/pages/profile.dart';
 
 void main() => runApp(const MyApp());
 
