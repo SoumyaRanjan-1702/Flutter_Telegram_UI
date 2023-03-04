@@ -3,6 +3,7 @@ import 'package:telegram_ui/pages/home.dart';
 import 'package:telegram_ui/pages/login.dart';
 // import 'package:telegram_ui/pages/chatpage.dart';
 // import 'package:telegram_ui/pages/profile.dart';
+import 'package:telegram_ui/pages/createaccountpage.dart';
 
 void main() => runApp(const MyApp());
 
@@ -11,9 +12,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Login(),
+      home: CreateAccountPage(),
     );
   }
 }
