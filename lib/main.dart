@@ -1,3 +1,4 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:telegram_ui/pages/home.dart';
 import 'package:telegram_ui/pages/login.dart';
@@ -5,7 +6,11 @@ import 'package:telegram_ui/pages/login.dart';
 // import 'package:telegram_ui/pages/profile.dart';
 import 'package:telegram_ui/pages/createaccountpage.dart';
 
-void main() => runApp(const MyApp());
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});

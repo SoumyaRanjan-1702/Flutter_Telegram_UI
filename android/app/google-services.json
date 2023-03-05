@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "446002603959",
+    "project_id": "telegram-flutterone",
+    "storage_bucket": "telegram-flutterone.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:446002603959:android:9177504245b962cfa26a32",
+        "android_client_info": {
+          "package_name": "com.example.telegram_ui"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "446002603959-lr4kuo2kmp8oq14o045cn91al4tjecgi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.telegram_ui",
+            "certificate_hash": "592f70141c77eab093339b8c7be9cc061e4398f3"
+          }
+        },
+        {
+          "client_id": "446002603959-hllcm9hcd2genu7lv0e6r88q2eh6sf1l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCT_4UXvSY6xsiJbGoe1Lmok7k9UsWSSfg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "446002603959-hllcm9hcd2genu7lv0e6r88q2eh6sf1l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
