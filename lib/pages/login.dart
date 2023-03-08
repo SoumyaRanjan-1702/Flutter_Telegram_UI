@@ -38,7 +38,9 @@ class _LoginState extends State<Login> {
                       padding: const EdgeInsets.symmetric(horizontal: 15),
                       child: TextFormField(
                         keyboardType: TextInputType.number,
-                        inputFormatters: [FilteringTextInputFormatter.digitsOnly],
+                        inputFormatters: [
+                          FilteringTextInputFormatter.digitsOnly
+                        ],
                         maxLength: 10,
                         decoration: InputDecoration(
                           labelText: 'Phone',
