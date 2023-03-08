@@ -19,7 +19,7 @@ class _HomeState extends State<Home> {
         elevation: 0.0,
         backgroundColor: Color.fromRGBO(33, 150, 243, 1),
         title: const Text(
-          "Telegram",
+          "Signal",
           style: TextStyle(
               fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white),
         ),
@@ -61,7 +61,7 @@ class _HomeState extends State<Home> {
                                   builder: (context) => ProfileSettingsPage()));
                         },
                         child: const Text(
-                          "Soumyaranjan Parhi",
+                          "Diya Shah",
                           style: TextStyle(
                               color: Colors.white,
                               fontSize: 18,
@@ -82,7 +82,7 @@ class _HomeState extends State<Home> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: const [
                           Text(
-                            "+91 8691945696",
+                            "+91 9518725876",
                             style: TextStyle(
                                 color: Colors.white70,
                                 fontWeight: FontWeight.w600),
@@ -106,21 +106,21 @@ class _HomeState extends State<Home> {
               },
               child: tile(msg: "New Group", im: Icons.people),
             ),
-            TextButton(
-              onPressed: () {
-                Navigator.push(
-                    context, MaterialPageRoute(builder: (context) => Home()));
-              },
-              child: tile(msg: "New Secret Chat", im: Icons.lock),
-            ),
-            TextButton(
-              onPressed: () {
-                Navigator.push(
-                    context, MaterialPageRoute(builder: (context) => Home()));
-              },
-              child: tile(
-                  msg: "New Broadcast List", im: Icons.speaker_phone_outlined),
-            ),
+            // TextButton(
+            //   onPressed: () {
+            //     Navigator.push(
+            //         context, MaterialPageRoute(builder: (context) => Home()));
+            //   },
+            //   child: tile(msg: "New Secret Chat", im: Icons.lock),
+            // ),
+            // TextButton(
+            //   onPressed: () {
+            //     Navigator.push(
+            //         context, MaterialPageRoute(builder: (context) => Home()));
+            //   },
+            //   child: tile(
+            //       msg: "New Broadcast List", im: Icons.speaker_phone_outlined),
+            // ),
             // const Divider(
             //   height: 10,
             // ),
@@ -136,7 +136,7 @@ class _HomeState extends State<Home> {
                 Navigator.push(
                     context, MaterialPageRoute(builder: (context) => Home()));
               },
-              child: tile(msg: "Theming", im: Icons.format_paint),
+              child: tile(msg: "Themes", im: Icons.format_paint),
             ),
             TextButton(
               onPressed: () {
@@ -150,7 +150,7 @@ class _HomeState extends State<Home> {
                 Navigator.push(
                     context, MaterialPageRoute(builder: (context) => Home()));
               },
-              child: tile(msg: "Telegram FAQ", im: Icons.question_answer),
+              child: tile(msg: "Signal FAQ", im: Icons.question_answer),
             ),
           ],
         ),
@@ -160,11 +160,11 @@ class _HomeState extends State<Home> {
           TextButton(
             onPressed: () {},
             child: list(
-                url: 'assets/p4.jpg',
-                name: "Kamlesh",
-                tym: "11.11pm",
-                desc: "How are u?",
-                msg: "2",
+                url: 'assets/five.jfif',
+                name: "Diya",
+                tym: "09.11pm",
+                desc: "Wassup?",
+                msg: "4",
                 isRead: true),
           ),
           const Divider(
@@ -191,27 +191,27 @@ class _HomeState extends State<Home> {
           TextButton(
               onPressed: () {},
               child: list(
-                  url: 'assets/p4.jpg',
-                  name: "Jignesh",
-                  tym: "11.11pm",
-                  desc: "kya haal chaal?",
-                  msg: "3",
-                  isRead: true)),
-          const Divider(
-            height: 0.3,
-          ),
-          TextButton(
-              onPressed: () {},
-              child: list(
-                  url: 'assets/p4.jpg',
-                  name: "Ichigo Kurosaki",
-                  tym: "11.11pm",
-                  desc: "Bankai!!!",
+                  url: 'assets/four.jfif',
+                  name: "Riya",
+                  tym: "10.12pm",
+                  desc: "hey?",
                   msg: "2",
                   isRead: true)),
           const Divider(
             height: 0.3,
           ),
+          // TextButton(
+          //     onPressed: () {},
+          //     child: list(
+          //         url: 'assets/p4.jpg',
+          //         name: "Ichigo Kurosaki",
+          //         tym: "11.11pm",
+          //         desc: "Bankai!!!",
+          //         msg: "2",
+          //         isRead: true)),
+          // const Divider(
+          //   height: 0.3,
+          // ),
           // list(
           //     url: 'assets/p4.jpg',
           //     name: "Ichigo Kurosaki",
