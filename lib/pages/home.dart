@@ -48,7 +48,6 @@ class _HomeState extends State<Home> {
                     children: [
                       const CircleAvatar(
                         radius: 30,
-                        // backgroundImage: ExactAssetImage("assets/p1.jpg"),
                       ),
                       const SizedBox(
                         height: 10,
@@ -68,13 +67,6 @@ class _HomeState extends State<Home> {
                               fontWeight: FontWeight.w600),
                         ),
                       ),
-                      // const Text(
-                      //   "Soumyaranjan Parhi",
-                      //   style: TextStyle(
-                      //       color: Colors.white,
-                      //       fontSize: 18,
-                      //       fontWeight: FontWeight.w600),
-                      // ),
                       const SizedBox(
                         height: 5,
                       ),
@@ -121,9 +113,6 @@ class _HomeState extends State<Home> {
               child: tile(
                   msg: "New Broadcast List", im: Icons.speaker_phone_outlined),
             ),
-            // const Divider(
-            //   height: 10,
-            // ),
             TextButton(
               onPressed: () {
                 Navigator.push(context,
@@ -170,24 +159,6 @@ class _HomeState extends State<Home> {
           const Divider(
             height: 0.2,
           ),
-
-          // list(
-          //     url: 'assets/p4.jpg',
-          //     name: "Kamlesh",
-          //     tym: "11.11pm",
-          //     desc: "How are u?",
-          //     msg: "2",
-          //     isRead: true),
-          // const Divider(
-          //   height: 0.2,
-          // ),
-          // list(
-          //     url: 'assets/p4.jpg',
-          //     name: "Jignesh",
-          //     tym: "11.11pm",
-          //     desc: "kya haal chaal?",
-          //     msg: "",
-          //     isRead: false),
           TextButton(
               onPressed: () {},
               child: list(
@@ -212,26 +183,6 @@ class _HomeState extends State<Home> {
           const Divider(
             height: 0.3,
           ),
-          // list(
-          //     url: 'assets/p4.jpg',
-          //     name: "Ichigo Kurosaki",
-          //     tym: "11.11pm",
-          //     desc: "Bankai!!!",
-          //     msg: "2",
-          //     isRead: true),
-          // const Divider(
-          //   height: 0.3,
-          // ),
-          // list(url: 'assets/four.jfif',name: "Alia",tym: "11.11pm",desc: "miss u <3",msg: "",isRead: false),
-          // const Divider(height: 0.2,),
-          // list(url: 'assets/five.jfif',name: "Amy",tym: "11.11pm",desc: "baby...",msg: "",isRead: false),
-          // const Divider(height: 0.2,),
-          // list(url: 'assets/six.jfif',name: "Dani",tym: "11.11pm",desc: "whr r u baby?",msg: "2",isRead: true),
-          // const Divider(height: 0.2,),
-          // list(url: 'assets/7.jfif',name: "Rose",tym: "11.11pm",desc: "missing u",msg: "",isRead: false),
-          // const Divider(height: 0.2,),
-          // list(url: 'assets/8.jfif',name: "Anistone",tym: "11.11pm",desc: "hai my love <3",msg: "2",isRead: true),
-          // const Divider(height: 0.2,),
         ],
       ),
       floatingActionButton: FloatingActionButton(

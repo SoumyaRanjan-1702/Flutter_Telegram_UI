@@ -11,7 +11,6 @@ class _CreateAccountPageState extends State<CreateAccountPage> {
   final _formKey = GlobalKey<FormState>();
   String _name = '';
   String _phoneNumber = '';
-  String _password = '';
 
   @override
   Widget build(BuildContext context) {
@@ -70,40 +69,14 @@ class _CreateAccountPageState extends State<CreateAccountPage> {
                 },
               ),
               SizedBox(height: 16.0),
-              TextFormField(
-                obscureText: true,
-                decoration: InputDecoration(
-                  labelText: 'Password',
-                  hintText: 'Enter your password',
-                ),
-                validator: (value) {
-                  if (value!.isEmpty) {
-                    return 'Please enter your password';
-                  }
-                  return null;
-                },
-                onSaved: (value) {
-                  _password = value!;
-                },
-              ),
-              SizedBox(height: 32.0),
-              TextButton(
-                child: Text('Create Account'),
-                onPressed: () {
-                  if (_formKey.currentState!.validate()) {
-                    _formKey.currentState!.save();
-                    // TODO: Add your create account logic here
-                  }
-                },
-              ),
-              SizedBox(height: 16.0),
               GestureDetector(
                 onTap: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => Login()));
                 },
                 child: Text(
-                  'Already have an account? Sign in',
+                  // 'Already have an account? Sign in',
+                  'Create Account & Sign in',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Colors.blue,
