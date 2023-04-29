@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "639892345333",
+    "project_id": "telegram-flutter-ui",
+    "storage_bucket": "telegram-flutter-ui.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:639892345333:android:311b3cbdf6071668a8d0bc",
+        "android_client_info": {
+          "package_name": "com.example.telegram_ui"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "639892345333-d8addja76tr519hnfgjavg7f9ebhij32.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBb9r9WZYZ5GQDfUt91zE9lZBUqkGcruwE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "639892345333-d8addja76tr519hnfgjavg7f9ebhij32.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
