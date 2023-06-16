@@ -84,6 +84,23 @@ class _CreateAccountPageState extends State<CreateAccountPage> {
                   ),
                 ),
               ),
+
+              SizedBox(height: 16.0),
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Login()));
+                },
+                child: Text(
+                  // 'Already have an account? Sign in',
+                  'Already have an Account & Sign in',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Colors.blue,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
             ],
           ),
         ),

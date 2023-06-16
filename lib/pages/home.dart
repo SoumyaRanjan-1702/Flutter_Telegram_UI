@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:telegram_ui/pages/chatpage.dart';
 import 'package:telegram_ui/pages/contactspage.dart';
 import 'package:telegram_ui/pages/login.dart';
 import 'package:telegram_ui/pages/settingspage.dart';
@@ -147,7 +148,10 @@ class _HomeState extends State<Home> {
       body: Column(
         children: [
           TextButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => ChatPage(title: "Kamlesh", urlString: 'assets/p4.jpg', description: "offline")));
+            },
             child: list(
                 url: 'assets/p4.jpg',
                 name: "Kamlesh",
@@ -160,7 +164,10 @@ class _HomeState extends State<Home> {
             height: 0.2,
           ),
           TextButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => ChatPage(title: "Jignesh", urlString: 'assets/p4.jpg', description: "Online")));
+              },
               child: list(
                   url: 'assets/p4.jpg',
                   name: "Jignesh",
@@ -172,7 +179,10 @@ class _HomeState extends State<Home> {
             height: 0.3,
           ),
           TextButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => ChatPage(title: "Ichigo Kurasaki", urlString: 'assets/p4.jpg', description: "Online")));
+              },
               child: list(
                   url: 'assets/p4.jpg',
                   name: "Ichigo Kurosaki",
